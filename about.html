@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Christmas Solomon</title>
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=aax0i6x69d"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: rgb(221, 55, 55);
+            overflow: hidden;
+            height: 50px;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: rgb(233, 104, 104);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: rgb(241, 131, 131);
+            color: white;
+        }
+
+        .toptoptopnav {
+            height: 15px;
+            background-color: #ca1515;
+        }
+
+        .toptopnav {
+            display: flex;
+            height: 100px;
+            background-color: rgb(221, 55, 55);
+        }
+
+        #logo {
+            height: 70px;
+            margin-left: 460px;
+            margin-top: 26px;
+
+        }
+
+        #map {
+            width: 80%;
+            height: 500px;
+            margin: 10px auto;
+            font-family: 'Jua', sans-serif;
+            font-size: 30px;
+        }
+
+        #appTitle {
+            font-family: 'Pacifico', cursive;
+            font-size: 75px;
+            margin-left: 10px;
+        }
+
+        #mainPart {
+            display: flex;
+        }
+
+        #Register {
+            font-family: 'Jua', sans-serif;
+            position: relative;
+            z-index: 3;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            display: block;
+            font-size: 30px;
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: rgb(231, 59, 59);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+
+            width: 250px;
+            height: 70px;
+        }
+
+        #Register:hover {
+            background-color: #ce0a0a
+        }
+
+        #Register:active {
+            background-color: #ce0a0a;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        #postcard {
+            background-color: #f1b0b0;
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 50px;
+            height: 460px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="toptoptopnav">
+
+    </div>
+    <div class="toptopnav">
+        <div id="appTitle">Solomon</div>
+        <img id="logo" src="xtree.png"></img>
+    </div>
+    <div class="topnav">
+        <a href="./login.html">Home</a>
+        <a class="active" href="./about.html">About</a>
+        <a href="./index.html">Map</a>
+        <a href="./present.html">Present</a>
+
+
+    </div>
+    <div id="postcard">
+        <div id="map"><br />크리스마스날 집에 혼자 있기 싫은 마음에 밖으로 큰맘 먹고 외출했지만 수많은 커플들 사이에 치여 항상 쓸쓸히 집에 돌아왔던 당신..!
+            <br /><br />그런
+            당신을 위해
+            솔로몬이
+            나섭니다!<br /><br />
+            크리스마스날 가장 커플들이 적은 곳을 찾아주고, 주변에 관광지까지 친절히 알려주는 솔로몬과 함께 올해는 행복한 크리스마스를 보내보아요~</div>
+    </div>
+
+    <div class="mainPart">
+
+        <button class="btn btn-default" id="Register">가자!</button>
+    </div>
+
+    <script>
+        const regiBtn = document.querySelector('#Register');
+        regiBtn.addEventListener('click', register);
+
+        function register() {
+
+            window.location.href = '/index.html';
+
+        }
+    </script>
+
+</body>
+
+</html>
